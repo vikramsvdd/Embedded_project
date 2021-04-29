@@ -6,7 +6,6 @@
 int main()
 {
     uint16_t temp=0;
-    unsigned int duty;
 
   Peripheral_io();                         // Peripherals and IO pin configurations setup function
   Init_adc();                              //  ADC registers initialization function
@@ -18,7 +17,7 @@ if((!(BUTTON_STATUS & (1<<BUTTON_PIN))) && (!(HEATER_STATUS & (1<<HEATER_PIN))))
         {
             LED_ON();                                                                     // Turning  ON the LED
             temp=Get_ADC(0); 
-            UART_READ(temp);                                                         //Reading the Temp value from UART buffer
+            out_PWM(temp);
             UART_WRITE(temp);                                                     // Writing the Temp value to the UART buffer
              for(duty=0;duty<1024;duty++) {
               OCR1A=duty;
