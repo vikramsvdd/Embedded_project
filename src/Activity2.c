@@ -1,7 +1,7 @@
 #include "Activity1.h"
 #include "Activity2.h" 
-#include "Activity3.h"                  //including all the source files within the same directory
-#include "Activity4.h"
+#include "main.h"                     //including all the source files within the same directory
+
 
 void Init_adc()
 {
