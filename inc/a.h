@@ -15,7 +15,20 @@
  * @brief Function to set the PWM output
  * 
  */
+#define PWM_PORT (PB1)
+/**
+ * @brief Function to set PWM o/p
+ *
+ */
 void set_PWM();
+
+/**
+ * @brief MACROS and global variables in usage throughout this project
+ *
+ */
+#define BAUD 9600 //Baud Rate
+#define F_CPU 16000000UL
+#define BAUD_RATE ((F_CPU)/(BAUD*16UL)-1)
 
 uint16_t value;
 /**
