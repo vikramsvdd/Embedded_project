@@ -8,7 +8,7 @@ int main()
     uint16_t temp=0;
     unsigned int duty;
 
-  perpheral_io();                         // Peripherals and IO pin configurations setup function
+  Peripheral_io();                         // Peripherals and IO pin configurations setup function
   Init_adc();                              //  ADC registers initialization function
   set_PWM();                               //PWM output function
   UART_init();                             // UART registers initialization function
