@@ -10,6 +10,38 @@ void set_PWM(void)
     TCCR1B |= (1<<WGM12)| (1<<CS11) | (1<<CS10);
 }
 
+void out_PWM(uint16_t adc_val)
+{
+    if((adc_val>=0) && (adc_val<=209))
+    {
+
+        OCR1A = 205; //20% duty cycle
+        
+    }
+    else if((adc_val>=210) && (adc_val<=509))
+    {
+
+        OCR1A = 410; //40% duty cycle
+        
+    }
+    else if((adc_val>=510) && (adc_val<=709))
+    {
+
+        OCR1A = 717;//70% duty cycle
+        
+    }
+    else if((adc_val>=710) && (adc_val<=1024))
+    {
+
+        OCR1A = 973; //95% duty cycle
+  
+    }
+    else
+    {
+        OCR1A = 0; //0% output
+    }
+}
+
 void UART_init()
 {
     value=BAUD_RATE;
