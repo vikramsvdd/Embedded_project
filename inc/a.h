@@ -23,9 +23,17 @@
 void set_PWM();
 
 /**
+ * @brief Function to give PWM o/p
+ *
+ */
+void out_PWM(uint16_t adc_val);
+
+/**
  * @brief MACROS and global variables in usage throughout this project
  *
  */
+
+
 #define BAUD 9600 //Baud Rate
 #define F_CPU 16000000UL
 #define BAUD_RATE ((F_CPU)/(BAUD*16UL)-1)
