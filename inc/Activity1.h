@@ -2,8 +2,8 @@
 #define _ACTIVITY1_h_
 
 /**
- * @file activity1.h
- * @author Rahul S Iyer
+ * @file Activity1.h
+ * @author Vikram Vasudev
  * @brief 
  * @version 0.1
  * @date 2021-04-23
