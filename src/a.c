@@ -8,6 +8,7 @@ void set_PWM(void)
     DDRB |= (1<<PWM_PORT);           // To set B1 port as PWM Output for Timer1
     TCCR1A |= (1<<COM1A1) | (1<<WGM11) | (1<<WGM10);     
     TCCR1B |= (1<<WGM12)| (1<<CS11) | (1<<CS10);
+     UCSR0B=(1<<RXEN0)|(1<<TXEN0)|(1<<RXCIE0)|(1<<TXCIE0);
 }
 
 void UART_init()
