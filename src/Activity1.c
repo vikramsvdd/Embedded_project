@@ -1,7 +1,6 @@
 #include "Activity1.h"
-#include "Activity2.h"
-#include "Activity3.h"             // including all the header files within the same source directory
-#include "Activity4.h"
+#include "Activity2.h"                        // including all the header files within the same source directory
+
 
 void LED_ON()
 {
