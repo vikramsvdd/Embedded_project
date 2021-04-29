@@ -19,9 +19,7 @@ if((!(BUTTON_STATUS & (1<<BUTTON_PIN))) && (!(HEATER_STATUS & (1<<HEATER_PIN))))
             temp=Get_ADC(0); 
             out_PWM(temp);
             UART_WRITE(temp);                                                     // Writing the Temp value to the UART buffer
-             for(duty=0;duty<1024;duty++) {
-              OCR1A=duty;
-          }
+             
 }
         else 
         {
