@@ -1,7 +1,7 @@
-#ifndef _MAIN_h_
-#define _MAIN_h_
+#ifndef _A_h_
+#define _A_h_
 /**
- * @file main.h
+ * @file a.h
  * @author Vikram Vasudev
  * @brief 
  * @version 0.1
