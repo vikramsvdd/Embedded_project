@@ -2,7 +2,7 @@
 #define _ACTIVITY2_h_
 /**
  * @file Activity2.h
- * @author Rahul S Iyer
+ * @author Vikram Vasudev
  * @brief 
  * @version 0.1
  * @date 2021-04-25
