@@ -33,7 +33,7 @@
  * @brief function to inistialise the pins
  * 
  */
-void perpheral_io(void);
+void Peripheral_io(void);
 
 /**
  * @brief to switch on led
