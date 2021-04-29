@@ -1,5 +1,5 @@
-#include "activity1.h"
-#include "activity2.h"                    //including the header files within the same directory
+#include "Activity1.h"
+#include "Activity2.h"                    //including the header files within the same directory
 #include "a.h"
 
 
